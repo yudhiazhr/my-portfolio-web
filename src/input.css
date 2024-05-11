@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[99999] bg-white bg-opacity-80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.reveal-left-to-right {
+  @apply opacity-0 blur-[5px] translate-x-[-50%] transition-all duration-[1s];
+}
+
+.reveal-right-to-left {
+  @apply opacity-0 blur-[5px] translate-x-[50%] transition-all duration-[1s];
+}
+
+.dissapear {
+  @apply opacity-0 transition-all duration-[1s];
+}
+
+.logo:nth-child(2) {
+  @apply transition delay-[400ms];
+}
+
+.logo:nth-child(3) {
+  @apply transition delay-[600ms];
+}
+
+.logo:nth-child(4) {
+  @apply transition delay-[800ms];
+}
+
+.logo:nth-child(5) {
+  @apply transition delay-[1000ms];
+}
+
+.logo:nth-child(6) {
+  @apply transition delay-[1200ms];
+}
+
+.logo:nth-child(7) {
+  @apply transition delay-[1400ms];
+}
+
+.logo:nth-child(8) {
+  @apply transition delay-[1600ms];
+}
+
+.logo:nth-child(9) {
+  @apply transition delay-[1800ms];
+}
+
+.logo:nth-child(10) {
+  @apply transition delay-[2000ms];
+}
+
+.show {
+  @apply opacity-100 blur-0 translate-x-0;
+}
